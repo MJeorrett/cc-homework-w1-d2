@@ -98,10 +98,17 @@ class Functions_Practice < MiniTest::Test
     assert_equal( -18, ans3)
     assert_equal( -27, ans4)
   end
-  #
-  # def test_miles_to_kilometres
-  #
-  # end
+
+  def test_miles_to_kilometres
+    ans1 = miles_to_kilometres( 1 )
+    ans2 = miles_to_kilometres( 21 )
+    ans3 = miles_to_kilometres( 14 )
+    ans4 = miles_to_kilometres( 0 )
+    assert_equal( 1.609, ans1 )
+    assert_equal( 33.796, ans2 )
+    assert_equal( 22.531, ans3 )
+    assert_equal( 0, ans4 )
+  end
 
 
 end

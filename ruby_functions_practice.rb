@@ -64,3 +64,7 @@ end
 def fahrenheit_to_celsius(fahrenheit)
   return ((fahrenheit.to_f - 32.0) * (5.0 / 9.0)).round(0)
 end
+
+def miles_to_kilometres(miles)
+  return (miles / 0.62137).round(3)
+end
