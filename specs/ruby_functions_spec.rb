@@ -77,7 +77,14 @@ class Functions_Practice < MiniTest::Test
   #Given the radius of a sphere calculate the volume
   #Try using Ruby's PI value!
   def test_volume_of_sphere()
-    assert_equal
+    ans1 = volume_of_sphere( 2 )
+    ans2 = volume_of_sphere( 12.1 )
+    ans3 = volume_of_sphere( 13 )
+    ans4 = volume_of_sphere(0)
+    assert_equal( 33.51, ans1 )
+    assert_equal( 7420.7, ans2 )
+    assert_equal( 9202.77, ans3 )
+    assert_equal( 0, ans4 )
   end
 
   # #You can add your own converters
