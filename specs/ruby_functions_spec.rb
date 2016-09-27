@@ -87,10 +87,17 @@ class Functions_Practice < MiniTest::Test
     assert_equal( 0, ans4 )
   end
 
-  # #You can add your own converters
-  # def test_fahrenheit_to_celsius()
-  #
-  # end
+  #You can add your own converters
+  def test_fahrenheit_to_celsius()
+    ans1 = fahrenheit_to_celsius( 14 )
+    ans2 = fahrenheit_to_celsius( 100 )
+    ans3 = fahrenheit_to_celsius( 0 )
+    ans4 = fahrenheit_to_celsius( -17 )
+    assert_equal( -10, ans1)
+    assert_equal( 38, ans2)
+    assert_equal( -18, ans3)
+    assert_equal( -27, ans4)
+  end
   #
   # def test_miles_to_kilometres
   #
